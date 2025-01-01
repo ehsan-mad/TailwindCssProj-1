@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Admin Layout</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-slate-100 flex flex-col min-h-screen dark:bg-gray-900">
+    <header
+      class="bg-blue-500 text-white p-4 text-center font-bold dark:bg-blue-800 sticky top-0 z-10"
+    >
+      <button
+        class="mt-2 text-center text-black bg-gray-200 px-5 py-2 hover:bg-gray-600 dark:bg-gray-500"
+        id="theme-toggle"
+      >
+        Dark Mode
+      </button>
+    </header>
+    <div class="flex flex-grow">
+      <aside
+        class="w-2/12 bg-gray-300 rounded-md shadow-md p-6 dark:bg-slate-800"
+      >
+        <div class="flex items-center mb-8">
+          <div class="aspect-w-16 aspect-h-9 !w-32px !h-32px">
+            <img
+              src="https://avatar.iran.liara.run/public"
+              alt="profile"
+              class="w-16 h-16 object-cover rounded-full border-lime-400"
+            />
+          </div>
+
+          <h2 class="p-5 text-xl font-semibold text-gray-700 dark:text-white">
+            Company Name
+          </h2>
+        </div>
+        <ul class="space-y-4">
+          <li
+            class="px-4 py-3 rounded-lg hover:bg-stone-200 hover:text-gray-700"
+          >
+            <a href="#" class="rounded-lg">Dashboard</a>
+          </li>
+          <li
+            class="px-4 py-3 rounded-lg hover:bg-stone-200 hover:text-gray-700"
+          >
+            <a href="#" class="rounded-lg">Settings</a>
+          </li>
+          <li
+            class="px-4 py-3 rounded-lg hover:bg-stone-200 hover:text-gray-700"
+          >
+            <a href="#" class="rounded-lg">Product</a>
+          </li>
+          <li
+            class="px-4 py-3 rounded-lg hover:bg-stone-200 hover:text-gray-700"
+          >
+            <a href="#" class="rounded-lg">Report</a>
+          </li>
+        </ul>
+      </aside>
+      <main
+        class="flex-1 bg-slate-200 flex-grow dark:bg-gray-800 overflow-scroll"
+      >
+        Main
+        <div class="container mx-auto">
+          <h2 class="text-xl font-semibold text-gray-600 mt-10">
+            Image Gallery
+          </h2>
+          <div
+            class="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 gap-6 relative m-2 "
+          >
+          
+            <!-- Card 1 -->
+            <div
+              class="aspect-w-16 aspect-h-9 rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 relative bg-gradient-to-r hover:from-orange-200 hover:via-red-200 hover:to-purple-200"
+            >
+              <img
+                src="https://farm4.staticflickr.com/3075/3168662394_7d7103de7d_z_d.jpg"
+                alt="Image 1"
+                class="object-cover w-full h-13 rounded-t-md"
+              />
+             <div class="absolute top-0 right-0 bg-red-600 text-white px-3 py-1 text-sm font-semibold rounded">Feature</div> 
+              <div class="px-4 py-4 relative">
+                <h3
+                  class="font-bold text-xl mb-2 text-gray-800 dark:text-white"
+                >
+                  The Birds
+                </h3>
+                <p
+                  class="text-gray-600 dark:text-gray-300 text-sm line-clamp-2"
+                >
+                  Ah, "The Bird!" Are you referring to something specific, like
+                  a book, a poem, or perhaps a concept related to birds? Birds
+                  are fascinating creatures with a vast array of species.
+                </p>
+                <a
+                  href="#"
+                  class="text-blue-500 underline inline-block hover:text-blue-700 mb-10"
+                  >Read More</a
+                >
+                
+                <!--imagemeta -->
+                <div
+                  class="flex flex-1 justify-between items-center bottom-4 gap-5 relative mt-2"
+                >
+                  <div class="inline-flex gap-3 justify-start">
+                    <div class="inline-flex flex-col items-start">
+                      <p class="text-gray-600 text-base leading-5">views</p>
+                      <p class="font-semibold">4,3123,23</p>
+                    </div>
+
+                    <div class="inline-flex flex-col items-start">
+                      <p class="text-gray-600 text-base leading-5">Downloads</p>
+                      <p class="font-semibold">4,3123,23</p>
+                    </div>
+                  </div>
+                  <div class="inline-flex gap-3 justify-end">
+                    <div class="inline-flex flex-col items-start">
+                      <button class="border-2 border-gray-200 rounded-lg shadow-md px-3 py-2">Share</button>
+                      
+                    </div>
+
+                    <div class="inline-flex flex-col items-start">
+                      <button class="border-2 border-gray-200 rounded-lg shadow-md px-3 py-2 mb-3">Downloads</button>
+                    </div>
+                  </div>
+
+                </div>
+                <div class=" mt-6">
+                  <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-800 mr-2 ">#Bird</span>
+               
+                  <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-800 mr-2 ">#Photography</span>
+                
+                  <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-800 mb-2 ">#Learning</span></div>
+              </div>
+              
+            </div>
+            <div
+              class="aspect-w-16 aspect-h-9 rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 relative bg-gradient-to-r hover:from-orange-200 hover:via-red-200 hover:to-purple-200"
+            >
+              <img
+                src="https://farm4.staticflickr.com/3075/3168662394_7d7103de7d_z_d.jpg"
+                alt="Image 1"
+                class="object-cover w-full h-13 rounded-t-md"
+              />
+             <div class="absolute top-0 right-0 bg-red-600 text-white px-3 py-1 text-sm font-semibold rounded">Feature</div> 
+              <div class="px-4 py-4 relative">
+                <h3
+                  class="font-bold text-xl mb-2 text-gray-800 dark:text-white"
+                >
+                  The Birds
+                </h3>
+                <p
+                  class="text-gray-600 dark:text-gray-300 text-sm line-clamp-2"
+                >
+                  Ah, "The Bird!" Are you referring to something specific, like
+                  a book, a poem, or perhaps a concept related to birds? Birds
+                  are fascinating creatures with a vast array of species.
+                </p>
+                <a
+                  href="#"
+                  class="text-blue-500 underline inline-block hover:text-blue-700 mb-10"
+                  >Read More</a
+                >
+                
+                <!--imagemeta -->
+                <div
+                  class="flex flex-1 justify-between items-center bottom-4 gap-5 relative mt-2"
+                >
+                  <div class="inline-flex gap-3 justify-start">
+                    <div class="inline-flex flex-col items-start">
+                      <p class="text-gray-600 text-base leading-5">views</p>
+                      <p class="font-semibold">4,3123,23</p>
+                    </div>
+
+                    <div class="inline-flex flex-col items-start">
+                      <p class="text-gray-600 text-base leading-5">Downloads</p>
+                      <p class="font-semibold">4,3123,23</p>
+                    </div>
+                  </div>
+                  <div class="inline-flex gap-3 justify-end">
+                    <div class="inline-flex flex-col items-start">
+                      <button class="border-2 border-gray-200 rounded-lg shadow-md px-3 py-2">Share</button>
+                      
+                    </div>
+
+                    <div class="inline-flex flex-col items-start">
+                      <button class="border-2 border-gray-200 rounded-lg shadow-md px-3 py-2 mb-3">Downloads</button>
+                    </div>
+                  </div>
+
+                </div>
+                <div class=" mt-6">
+                  <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-800 mr-2 ">#Bird</span>
+               
+                  <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-800 mr-2 ">#Photography</span>
+                
+                  <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-800 mb-2 ">#Learning</span></div>
+              </div>
+              
+            </div>
+            <div class="flex flex-wrap gap-6 mt-6">
+              <div class="flex-1 aspect-w-16 aspect-h-9">
+                <img
+                  src="https://farm9.staticflickr.com/8505/8441256181_4e98d8bff5_z_d.jpg"
+                  alt="Image 1"
+                  class="object-cover w-full h-full rounded-md shadow-lg"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 mt-6">
+              <div class="flex-1 aspect-w-16 aspect-h-9">
+                <img
+                  src="https://farm3.staticflickr.com/2378/2178054924_423324aac8.jpg"
+                  alt="Image 1"
+                  class="object-cover w-full h-full rounded-md shadow-lg"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 mt-6">
+              <div class="flex-1 aspect-w-16 aspect-h-9">
+                <img
+                  src="https://farm7.staticflickr.com/6089/6115759179_86316c08ff_z_d.jpg"
+                  alt="Image 1"
+                  class="object-cover w-full h-full rounded-md shadow-lg"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 mt-6">
+              <div class="flex-1 aspect-w-16 aspect-h-9">
+                <img
+                  src="https://farm9.staticflickr.com/8295/8007075227_dc958c1fe6_z_d.jpg"
+                  alt="Image 1"
+                  class="object-cover w-full h-full rounded-md shadow-lg"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 mt-6">
+              <div class="flex-1 aspect-w-16 aspect-h-9">
+                <img
+                  src="https://farm2.staticflickr.com/1449/24800673529_64272a66ec_z_d.jpg"
+                  alt="Image 1"
+                  class="object-cover w-full h-full rounded-md shadow-lg"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 mt-6">
+              <div class="flex-1 aspect-w-16 aspect-h-9">
+                <img
+                  src="https://farm4.staticflickr.com/3752/9684880330_9b4698f7cb_z_d.jpg"
+                  alt="Image 1"
+                  class="object-cover w-full h-full rounded-md shadow-lg"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 mt-6">
+              <div class="flex-1 aspect-w-16 aspect-h-9">
+                <img
+                  src="https://farm3.staticflickr.com/2220/1572613671_7311098b76_z_d.jpg"
+                  alt="Image 1"
+                  class="object-cover w-full h-full rounded-md shadow-lg"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 mt-6">
+              <div class="flex-1 aspect-w-16 aspect-h-9">
+                <img
+                  src="https://farm7.staticflickr.com/6089/6115759179_86316c08ff_z_d.jpg"
+                  alt="Image 1"
+                  class="object-cover w-full h-full rounded-md shadow-lg"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 mt-6">
+              <div class="flex-1 aspect-w-16 aspect-h-9">
+                <img
+                  src="https://farm2.staticflickr.com/1090/4595137268_0e3f2b9aa7_z_d.jpg"
+                  alt="Image 1"
+                  class="object-cover w-full h-full rounded-md shadow-lg"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 mt-6">
+              <div class="flex-1 aspect-w-16 aspect-h-9">
+                <img
+                  src="https://farm4.staticflickr.com/3224/3081748027_0ee3d59fea_z_d.jpg"
+                  alt="Image 1"
+                  class="object-cover w-full h-full rounded-md shadow-lg"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 mt-6">
+              <div class="flex-1 aspect-w-16 aspect-h-9">
+                <img
+                  src="https://farm8.staticflickr.com/7377/9359257263_81b080a039_z_d.jpg"
+                  alt="Image 1"
+                  class="object-cover w-full h-full rounded-md shadow-lg"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 mt-6">
+              <div class="flex-1 aspect-w-16 aspect-h-9">
+                <img
+                  src="https://farm9.staticflickr.com/8295/8007075227_dc958c1fe6_z_d.jpg"
+                  alt="Image 1"
+                  class="object-cover w-full h-full rounded-md shadow-lg"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 mt-6">
+              <div class="flex-1 aspect-w-16 aspect-h-9">
+                <img
+                  src="https://farm2.staticflickr.com/1449/24800673529_64272a66ec_z_d.jpg"
+                  alt="Image 1"
+                  class="object-cover w-full h-full rounded-md shadow-lg"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 mt-6">
+              <div class="flex-1 aspect-w-16 aspect-h-9">
+                <img
+                  src="https://farm4.staticflickr.com/3752/9684880330_9b4698f7cb_z_d.jpg"
+                  alt="Image 1"
+                  class="object-cover w-full h-full rounded-md shadow-lg"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 mt-6">
+              <div class="flex-1 aspect-w-16 aspect-h-9">
+                <img
+                  src="https://farm2.staticflickr.com/1533/26541536141_41abe98db3_z_d.jpg"
+                  alt="Image 1"
+                  class="object-cover w-full h-full rounded-md shadow-lg"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 mt-6">
+              <div class="flex-1 aspect-w-16 aspect-h-9">
+                <img
+                  src="https://farm4.staticflickr.com/3852/14447103450_2d0ff8802b_z_d.jpg"
+                  alt="Image 1"
+                  class="object-cover w-full h-full rounded-md shadow-lg"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 mt-6">
+              <div class="flex-1 aspect-w-16 aspect-h-9">
+                <img
+                  src="https://farm3.staticflickr.com/2220/1572613671_7311098b76_z_d.jpg"
+                  alt="Image 1"
+                  class="object-cover w-full h-full rounded-md shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="bg-blue-500 text-white text-center p-4 dark:bg-blue-800">
+      &COPY;Footer
+    </footer>
+    <script>
+      const toggleElement = document.getElementById("theme-toggle");
+      const htmlElement = document.documentElement;
+      toggleElement.addEventListener("click", () => {
+        htmlElement.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
